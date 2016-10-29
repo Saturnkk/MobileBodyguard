@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settingView="http://schemas.android.com/apk/"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        style="@style/activityTitleBar"
+        android:text="常用工具"
+        />
+
+    <com.le.safe.ui.SettingView
+        android:id="@+id/sv_commontools_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        settingView:title="号码归属地查询"
+        settingView:settingviewBackground="first"
+        settingView:istoggle="false"
+        >
+    </com.le.safe.ui.SettingView>
+    
+    <com.le.safe.ui.SettingView
+        android:id="@+id/sv_commontools_commonnumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        settingView:title="常用号码查询"
+        settingView:settingviewBackground="last"
+        settingView:istoggle="false"
+        >
+    </com.le.safe.ui.SettingView>
+    
+    
+     <com.le.safe.ui.SettingView
+        android:id="@+id/sv_commontools_smsbackup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+         settingView:title="短信备份"
+         settingView:settingviewBackground="first"
+         settingView:istoggle="false"
+        >
+    </com.le.safe.ui.SettingView>
+    
+    <com.le.safe.ui.SettingView
+        android:id="@+id/sv_commontools_smsrecovery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        settingView:title="短信还原"
+        settingView:settingviewBackground="last"
+        settingView:istoggle="false"
+        >
+    </com.le.safe.ui.SettingView>
+    
+    
+     <com.le.safe.ui.SettingView
+         android:id="@+id/sv_commontools_applock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+         settingView:title="程序锁管理"
+         settingView:settingviewBackground="first"
+         settingView:istoggle="false"
+        >
+    </com.le.safe.ui.SettingView>
+    
+    <com.le.safe.ui.SettingView
+        android:id="@+id/sv_commontools_watchdog1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        settingView:title="开启电子狗服务1"
+        settingView:settingviewBackground="middle"
+        settingView:istoggle="true"
+        >
+    </com.le.safe.ui.SettingView>
+    
+    <com.le.safe.ui.SettingView
+        android:id="@+id/sv_commontools_watchdog2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        settingView:title="开启电子狗服务2"
+        settingView:settingviewBackground="last"
+        settingView:istoggle="true"
+        >
+    </com.le.safe.ui.SettingView>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</LinearLayout>

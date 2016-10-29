@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itcast="http://schemas.android.com/apk/res/cn.itcast.mobliesafexian05"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        style="@style/activityTitleBar"
+        android:text="常用号码查询"
+        />
+    <!-- groupIndicator : 设置组的图标 -->
+	<ExpandableListView 
+	    android:id="@+id/eblv_commonnumber_phones"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:groupIndicator="@null"
+	    ></ExpandableListView>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</LinearLayout>

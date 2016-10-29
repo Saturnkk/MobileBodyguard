@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!-- 将颜色抽取到colors.xml文件 -->
+    <color name="lostfind_protected_selector_press">#9cffce</color>
+    <color name="lostfind_protected_selector_normal">#ffffff</color>
+</resources>

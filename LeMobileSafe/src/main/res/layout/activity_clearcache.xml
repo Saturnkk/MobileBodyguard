@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        style="@style/activityTitleBar"
+        android:text="缓存清理"
+        />
+	<FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#429ED6"
+        android:padding="10dp"
+	    >
+    <LinearLayout 
+        android:id="@+id/ll_clearcache_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        >
+        <RelativeLayout 
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/scan_bg"
+            >
+            <ImageView
+                android:id="@+id/iv_clearcache_icon" 
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_launcher"
+                android:layout_centerInParent="true"
+                />
+            <ImageView 
+                android:id="@+id/iv_clearcache_scanline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scan_line"
+                />
+            
+        </RelativeLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            >
+          <ProgressBar
+            android:id="@+id/pb_clearcache_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:progressDrawable="@drawable/appmanger_progressbar_drawable" />
+          <TextView 
+              android:id="@+id/tv_clearcache_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="手机卫士"
+              android:textSize="18sp"
+              android:layout_marginTop="3dp"
+              android:layout_marginBottom="3dp"
+              android:textColor="#ffffff"
+              android:singleLine="true"
+              />
+          <TextView 
+              android:id="@+id/tv_clearcache_cachesize"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="缓存大小:0.00B"
+              android:textColor="#ffffff"
+              />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout 
+        android:id="@+id/rel_clearcache_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:visibility="gone"
+        >
+        <TextView 
+            android:id="@+id/tv_clearcache_scancachetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总共有一个缓存软件，总共xxxxMB"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:maxLines="2"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btn_clearcache_clear"
+            />
+        <Button 
+            android:id="@+id/btn_clearcache_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="快速扫描"
+            android:background="@drawable/selector_home_setpassword_dialog_btn_ok"
+            android:textColor="#ffffff"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+    </FrameLayout>
+    
+    <ListView 
+        android:id="@+id/lv_clearcache_application"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        ></ListView>
+    
+    
+    <Button 
+        android:id="@+id/btn_clearcache_clearall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="一键清理"
+        android:background="@drawable/selector_home_setpassword_dialog_btn_ok"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff"
+        />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <TextView 
+        android:id="@+id/tv_customaddressdialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="选择归属地样式"
+        android:textColor="@android:color/white"
+        android:background="@android:color/darker_gray"
+        android:textSize="18sp"
+        android:padding="8dp"
+        />
+    <!-- divider : 设置分割线的颜色，但是如果设置为#xxxx颜色，必须设置先的高度
+    	dividerHeight :设置分割线的高度
+     -->
+    <ListView 
+        android:id="@+id/lv_customaddrssdialog_bgs"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        ></ListView>
+
+</LinearLayout>

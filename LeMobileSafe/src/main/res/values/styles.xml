@@ -1,0 +1,159 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#429ED6"
+           android:gravity="center"
+           android:textSize="20sp"
+           android:textColor="@android:color/white"
+           android:paddingTop="10dp"
+           android:paddingBottom="10dp"
+           android:textStyle="bold"
+           /> -->
+
+    <style name="activityTitleBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#429ED6</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <!--
+    	setup界面的title样式
+    	android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+    -->
+    <style name="setuptitleStyle" parent="activityTitleBar">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+
+
+    <!--
+    	setup内容title的样式
+    	<TextView
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textSize="18sp"
+	    android:textColor="#aa000000"
+	    android:layout_margin="10dp"
+	    />
+     -->
+    <style name="setupcontentTileStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#aa000000</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    <!--
+    	setup内容样式
+    	<TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="#aa000000"
+        android:drawableLeft="@drawable/dialog_title_default_icon"
+        android:gravity="center_vertical"
+        android:drawablePadding="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="3dp"
+        />
+     -->
+    <style name="setupContentStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#aa000000</item>
+        <item name="android:drawableLeft">@drawable/dialog_title_default_icon</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+    </style>
+    <!--
+    	setup下一步按钮样式
+    	<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下一步"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/selector_home_setpassword_dialog_btn_ok"
+            android:textColor="@android:color/white"
+            android:drawableRight="@drawable/next"
+            android:padding="8dp"
+            android:onClick="next"
+            /> -->
+    <style name="next">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">下一步</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@drawable/selector_home_setpassword_dialog_btn_ok</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:drawableRight">@drawable/next</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:onClick">next</item>
+    </style>
+    <!--
+    	setup上一步按钮样式
+    	 <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上一步"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/selector_home_setpassword_dialog_btn_ok"
+            android:textColor="@android:color/white"
+            android:drawableLeft="@drawable/pre"
+            android:padding="8dp"
+            android:onClick="next"
+            />
+     -->
+    <style name="pre">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">上一步</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@drawable/selector_home_setpassword_dialog_btn_ok</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:drawableLeft">@drawable/pre</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:onClick">pre</item>
+    </style>
+
+
+    <!-- 对话框样式 -->
+    <style name="AddressDialog" parent="android:Theme.Dialog">
+        <!-- 设置dialog的背景 -->
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- 背景的阴影 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 窗口是是半透明效果-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 是否去除标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否开启边框触摸操作 -->
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+
+</resources>

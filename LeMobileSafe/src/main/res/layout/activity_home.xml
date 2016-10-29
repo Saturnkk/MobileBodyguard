@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:scrollbars="@null"
+    >
+	<!-- ScrollView : 当界面超出屏幕的时候，界面就可以滑动，只能包含一个控件 
+			scrollbars : 设置scrollview的滚动条
+	-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_bkg" >
+
+            <!-- layout_centerVertical : 垂直居中 -->
+
+            <ImageView
+                android:id="@+id/iv_home_logo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/piaoliang" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="35dp"
+                android:layout_toRightOf="@id/iv_home_logo"
+                android:orientation="vertical" >
+
+                <!-- textStyle : 设置字体样式 -->
+
+                <TextView
+                    android:id="@+id/tv_home_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="汝乐万能安全卫士"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <!--
+                 singleLine : 单行显示 
+            	 ellipsize 
+            	 	none: 隐藏剩下文本
+            	 	start : 省略前面的文本，如果后面放不下，默认省略后面文本
+            	 	middle ： 省略中间的文本
+            	 	end ： 省略后面的文本，默认样式
+            	 	marquee ： 滚动的操作
+            	 focusableInTouchMode : 触摸获取焦点
+            	 textview天生是没有焦点
+            	 focusable : 是否可以获取焦点，true：可以  false:不可以
+            	 android默认滚动3次
+            	 marqueeRepeatLimit : 设置滚动次数    
+            	 marquee_forever ：永远滚动　　　－１                -->
+
+                <cn.itcast.mobliesafexian05.ui.HomeTextView
+                    android:id="@+id/tv_home_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="汝乐万能安全卫士，www.rule.cn,真64核杀毒引擎，杠杠的..."
+                    android:textColor="#ff0000"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <!--
+             layout_alignParentRight :  在父控件的右方
+        	 scaleType : 设置图片的填充类型，center:保持原图带下，在Imageview中心显示
+        	 clickable : 是否可以点击，true：可以，false：不可以            -->
+
+            <ImageView
+                android:id="@+id/iv_home_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="4dp"
+                android:background="@drawable/selector_home_setting"
+                android:clickable="true"
+                android:scaleType="center"
+                android:src="@drawable/setting" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/adLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal" >
+        </LinearLayout>
+
+        <!--
+         numColumns : 设置gridview的列数 
+         verticalSpacing : 行与行之间的距离
+         horizontalSpacing : 列与列之间的距离        -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="330dp" >
+
+            <GridView
+                android:id="@+id/gv_home_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="5dp"
+                android:numColumns="2"
+                android:verticalSpacing="5dp" >
+            </GridView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

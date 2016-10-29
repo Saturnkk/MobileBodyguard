@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itcast="http://schemas.android.com/apk/res/cn.itcast.mobliesafexian05"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        style="@style/activityTitleBar"
+        android:text="锁屏界面"
+        />
+
+    <ImageView 
+        android:id="@+id/iv_watchdog_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_launcher"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+    
+    <TextView 
+        android:id="@+id/tv_watchdog_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手机卫士"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        />
+    
+    <EditText 
+        android:id="@+id/et_watchdog_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        />
+    
+    <Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="确定"
+        android:background="@drawable/selector_home_setpassword_dialog_btn_ok"
+        android:textColor="@android:color/white"
+        android:layout_margin="10dp"
+        android:onClick="unlock"
+        />
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</LinearLayout>

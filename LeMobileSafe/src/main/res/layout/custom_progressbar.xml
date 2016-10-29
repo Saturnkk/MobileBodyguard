@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_appmanager_memorytext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内存:   "
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <!-- progress :进度 -->
+
+        <ProgressBar
+            android:id="@+id/pb_appmanager_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:progressDrawable="@drawable/appmanger_progressbar_drawable" />
+
+        <TextView
+            android:id="@+id/tv_appmanger_used"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="XX.XXMB已用"
+            android:layout_centerVertical="true"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_appmanger_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:text="XX.XXMB可用"
+            android:layout_centerVertical="true"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

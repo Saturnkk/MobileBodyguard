@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:description="@string/accessibility_service_description"
+    android:accessibilityEventTypes="typeAllMask"
+    android:accessibilityFeedbackType="feedbackSpoken"
+/>
+<!-- 
+description : 描述信息
+packageNames ： 当前应用程序的包名，默认就是当前的应用的包名
+accessibilityEventTypes ： 事件的类型
+accessibilityFlags ： accessibility标签信息，默认就是flagDefault
+accessibilityFeedbackType ： 反馈信息的类型
+notificationTimeout ： 通知的超时时间
+canRetrieveWindowContent ： 是否检索窗口内容，默认是true
+settingsActivity ： 设置activity，如果accessibility需要进行特殊的设置的用到的activity，一般不写
+ -->

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/activityTitleBar"
+            android:text="黑名单管理" />
+		<!-- clickable : 是否可以点击，true:可以  false:不可以 -->
+        <ImageView
+            android:id="@+id/iv_blacknumber_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_blacknumber_add" 
+            android:clickable="true"
+            />
+    </RelativeLayout>
+    
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!-- visibility : 控件是否可见
+			 invisible ： 不可见，但是占用位置
+			 gone : 不可见，也不占用位置
+			 visible : 可见
+		-->
+        <ImageView 
+            android:id="@+id/iv_blacknumber_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+        <ListView
+            android:id="@+id/lv_blacknumber_blacknumbers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </ListView>
+    
+        <!-- 进度条   进度条+文字-->
+        <LinearLayout 
+            android:id="@+id/ll_blacknumber_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            >
+            <!-- 想要修改style样式文件中的属性的值，直接在控件中使用相同的属性，赋值，即可将style样式文件相应的属性的值给覆盖掉 -->
+            <ProgressBar 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:indeterminateDrawable="@drawable/progressbar_drawable"
+                />
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="玩命加载中..."
+                />
+        </LinearLayout>
+    </FrameLayout>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</LinearLayout>

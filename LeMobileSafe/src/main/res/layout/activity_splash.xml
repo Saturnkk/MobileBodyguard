@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    >
+	<!-- layout_alignParentBottom : 在相对布局的底部 
+	     layout_centerHorizontal : 在相对布局中水平居中
+	     @android:color/white : 使用android系统提供的字体颜色
+	     layout_marginBottom : 在相对布局中，距离底部的距离
+	     shadowColor : 设置文本的阴影颜色
+	     shadowDx : 阴影关于x轴的偏移量
+	     shadowRadius : 阴影的半径
+	-->
+    <TextView
+        android:id="@+id/tv_splash_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="版本:1.0" 
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="10dp"
+        android:shadowColor="#00ff00"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        />
+
+</RelativeLayout>

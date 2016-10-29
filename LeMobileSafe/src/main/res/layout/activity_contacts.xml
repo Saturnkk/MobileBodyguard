@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <TextView 
+        style="@style/activityTitleBar"
+        android:text="选择联系人"
+        />
+    <!-- FrameLayout : 悬浮叠加控件效果，比如视频播放 -->
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <ListView 
+        android:id="@+id/lv_contacts_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></ListView>
+    <ProgressBar 
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+    </FrameLayout>
+</LinearLayout>

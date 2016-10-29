@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/activityTitleBar"
+        android:text="软件管理" />
+
+    <cn.itcast.mobliesafexian05.ui.CustomProgressbar
+        android:id="@+id/cp_appmanager_memory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></cn.itcast.mobliesafexian05.ui.CustomProgressbar>
+    <cn.itcast.mobliesafexian05.ui.CustomProgressbar
+        android:id="@+id/cp_appmanager_sd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ></cn.itcast.mobliesafexian05.ui.CustomProgressbar>
+    
+    <!-- 控件在布局文件中越往下，显示的时候越在上方 -->
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <ListView 
+        android:id="@+id/lv_appmanager_applications"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></ListView>
+    <TextView 
+        android:id="@+id/tv_appmanger_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="用户程序(xxx个)"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:background="#D6D3CE"
+        android:padding="8dp"
+        />
+    </FrameLayout>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</LinearLayout>
