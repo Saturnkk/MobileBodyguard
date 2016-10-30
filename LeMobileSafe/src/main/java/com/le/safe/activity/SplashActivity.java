@@ -12,6 +12,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -34,8 +35,10 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-
-public class SplashActivity extends AppCompatActivity {
+/**
+ * splash欢迎界面
+ */
+public class SplashActivity extends BaseActivity {
 	/**
 	 * 请求路径
 	 */
@@ -46,11 +49,22 @@ public class SplashActivity extends AppCompatActivity {
 	private String mApkurl;
 	private String mMsg;
 	private ProgressDialog progressDialog;
+
+	/**
+	 * 创建布局
+	 * @return
+     */
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_splash);
-		
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_splash,null);
+		return view;
+	}
+
+	/**
+	 * 初始化控件数据
+	 */
+	@Override
+	protected void initData() {
 		initView();
 		copyDB("address.db");
 		copyDB("commonnum.db");
@@ -60,6 +74,7 @@ public class SplashActivity extends AppCompatActivity {
 		}
 		shortCut();
 	}
+
 	/**
 	 * 创建快捷方式
 	 */

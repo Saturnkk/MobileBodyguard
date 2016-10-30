@@ -30,7 +30,10 @@ import com.le.safe.utils.SharedPreferencesUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-public class HomeActivity extends AppCompatActivity implements OnClickListener,
+/**
+ * 首页
+ */
+public class HomeActivity extends BaseActivity implements OnClickListener,
 		OnItemClickListener {
 
 	private ImageView mLogo;
@@ -49,14 +52,21 @@ public class HomeActivity extends AppCompatActivity implements OnClickListener,
 	private List<HomeItemInfo> mList;
 	private AlertDialog dialog;
 
+	/**
+	 * 初始化布局
+	 * @return
+     */
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_home);// 加载布局
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_home,null);
+		return view;
+	}
 
-
-		//int i = 3/0;
-		
+	/**
+	 * 初始化控件数据
+	 */
+	@Override
+	protected void initData() {
 		initView();
 	}
 
@@ -125,21 +135,18 @@ public class HomeActivity extends AppCompatActivity implements OnClickListener,
 		// 获取条目的个数
 		@Override
 		public int getCount() {
-			// TODO Auto-generated method stub
 			return mList.size();
 		}
 
 		// 根据条目的位置获取条目的对应的数据
 		@Override
 		public Object getItem(int position) {
-			// TODO Auto-generated method stub
 			return mList.get(position);
 		}
 
 		// 获取条目的id
 		@Override
 		public long getItemId(int position) {
-			// TODO Auto-generated method stub
 			return position;
 		}
 

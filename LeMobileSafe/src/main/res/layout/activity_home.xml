@@ -2,14 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:divider="@null">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/blue_bkg">
-
-        <!-- layout_centerVertical : 垂直居中 -->
+        android:fitsSystemWindows="true">
+        <!--&lt;!&ndash;水波纹&ndash;&gt;-->
+        <!--<com.le.safe.ui.WaterRippleView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="200dp" />-->
+        <!--&lt;!&ndash; layout_centerVertical : 垂直居中 &ndash;&gt;-->
 
         <ImageView
             android:id="@+id/iv_home_logo"
@@ -23,7 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="35dp"
+                android:layout_marginTop="70dp"
+
             android:layout_toRightOf="@id/iv_home_logo"
             android:orientation="vertical">
 
@@ -69,6 +74,8 @@
         -->
 
         <ImageView
+            android:layout_alignTop="@+id/iv_home_logo"
+            android:layout_marginTop="70dp"
             android:id="@+id/iv_home_setting"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -78,7 +85,11 @@
             android:clickable="true"
             android:scaleType="center"
             android:src="@drawable/setting" />
+        <!--<com.le.safe.ui.WaterRippleView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp" />-->
     </RelativeLayout>
+
 
     <!--<LinearLayout-->
     <!--android:id="@+id/adLayout"-->
