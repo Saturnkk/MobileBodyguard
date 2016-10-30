@@ -11,14 +11,14 @@
 
         <attr name="istoggle" format="boolean" />
     </declare-styleable>
-    <declare-styleable name="ArcProgress">
-        <attr name="arc_bottom_text" format="string" /> <!-- format : 属性的值的类型 -->
+    <!--<declare-styleable name="ArcProgress">-->
+        <!--<attr name="arc_bottom_text" format="string" /> &lt;!&ndash; format : 属性的值的类型 &ndash;&gt;-->
 
-        <attr name="arc_text_color" format="color" />
+        <!--<attr name="arc_text_color" format="color" />-->
 
-        <attr name="arc_bottom_text_size" format="dimension" />
-        <attr name="arc_stroke_width" format="dimension" />
-    </declare-styleable>
+        <!--<attr name="arc_bottom_text_size" format="dimension" />-->
+        <!--<attr name="arc_stroke_width" format="dimension" />-->
+    <!--</declare-styleable>-->
 
     <declare-styleable name="CircleProgress">
         <attr name="circle_progress" format="integer"/>
@@ -84,5 +84,39 @@
         <attr name="circleProgressStyle" format="reference"/>
         <attr name="donutProgressStyle" format="reference"/>
         <attr name="arcProgressStyle" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="StickyListHeadersListView">
+        <attr name="stickyListHeadersListViewStyle" format="reference"/>
+
+        <!-- View attributes -->
+        <attr name="android:clipToPadding" />
+        <attr name="android:scrollbars" />
+        <attr name="android:overScrollMode" />
+        <attr name="android:padding" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingBottom" />
+
+        <!-- ListView attributes -->
+        <attr name="android:fadingEdgeLength" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:cacheColorHint" />
+        <attr name="android:choiceMode" />
+        <attr name="android:drawSelectorOnTop" />
+        <attr name="android:fastScrollEnabled" />
+        <attr name="android:fastScrollAlwaysVisible" />
+        <attr name="android:listSelector" />
+        <attr name="android:scrollingCache" />
+        <attr name="android:scrollbarStyle" />
+        <attr name="android:divider" />
+        <attr name="android:dividerHeight" />
+        <attr name="android:transcriptMode" />
+        <attr name="android:stackFromBottom" />
+
+        <!-- StickyListHeaders attributes -->
+        <attr name="hasStickyHeaders" format="boolean" />
+        <attr name="isDrawingListUnderStickyHeader" format="boolean" />
     </declare-styleable>
 </resources>

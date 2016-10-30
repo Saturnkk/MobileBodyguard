@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BodyGuard.iml" filepath="$PROJECT_DIR$/BodyGuard.iml" />
       <module fileurl="file://$PROJECT_DIR$/LeMobileSafe/LeMobileSafe.iml" filepath="$PROJECT_DIR$/LeMobileSafe/LeMobileSafe.iml" />
-      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
-      <module fileurl="file://$PROJECT_DIR$/main/main.iml" filepath="$PROJECT_DIR$/main/main.iml" />
     </modules>
   </component>
 </project>

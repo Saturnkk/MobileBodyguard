@@ -28,6 +28,8 @@ import com.le.safe.engine.ProcessEngine;
 import com.le.safe.service.LockScreenClearService;
 import com.le.safe.ui.CustomProgressbar;
 import com.le.safe.ui.SettingView;
+import com.le.safe.ui.StickyListHeadersAdapter;
+import com.le.safe.ui.StickyListHeadersListView;
 import com.le.safe.utils.Contants;
 import com.le.safe.utils.ServiceUtil;
 import com.le.safe.utils.SharedPreferencesUtil;
@@ -35,8 +37,7 @@ import com.le.safe.utils.SharedPreferencesUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-import se.emilsjolander.stickylistheaders.StickyListHeadersAdapter;
-import se.emilsjolander.stickylistheaders.StickyListHeadersListView;
+
 
 public class ProcessManagerActivity extends AppCompatActivity {
 

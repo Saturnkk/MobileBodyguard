@@ -1,1 +1,1 @@
-include ':LeMobileSafe', ':main'
+include ':LeMobileSafe'

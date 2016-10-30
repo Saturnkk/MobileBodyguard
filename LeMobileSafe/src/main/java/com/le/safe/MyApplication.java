@@ -15,7 +15,7 @@ public class MyApplication extends Application {
 		super.onCreate();
 		System.out.println("Application启动了");
 		//设置捕获程序出现的异常
-		Thread.currentThread().setUncaughtExceptionHandler(new MyUncaughtExceptionHandler());
+//		Thread.currentThread().setUncaughtExceptionHandler(new MyUncaughtExceptionHandler());
 	}
 	
 	private class MyUncaughtExceptionHandler implements UncaughtExceptionHandler{

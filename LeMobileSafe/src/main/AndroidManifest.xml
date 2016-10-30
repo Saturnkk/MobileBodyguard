@@ -7,8 +7,8 @@
              versionName ： 版本名称，给用户展示版本号
     -->
     <uses-sdk
-        android:minSdkVersion="11"
-        android:targetSdkVersion="17" />
+        android:minSdkVersion="19"
+        android:targetSdkVersion="24 " />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- 写SD卡权限 -->
@@ -54,7 +54,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
-    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -181,10 +181,6 @@
         <!-- </intent-filter> -->
         <!-- </receiver> -->
 
-        <service
-            android:name="temp.MyService"
-            android:enabled="true"
-            android:exported="true"></service>
     </application>
 
 </manifest>

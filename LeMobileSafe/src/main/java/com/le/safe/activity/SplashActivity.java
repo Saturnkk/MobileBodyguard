@@ -49,10 +49,7 @@ public class SplashActivity extends AppCompatActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		System.out.println("SplashActivity启动了");
 		setContentView(R.layout.activity_splash);
-		
-
 		
 		initView();
 		copyDB("address.db");
@@ -173,7 +170,7 @@ public class SplashActivity extends AppCompatActivity {
 			};
 		}.start();*/
 		//connTimeout : 连接超时时间
-		HttpUtils httpUtils = new HttpUtils(3000);
+//		HttpUtils httpUtils = new HttpUtils(3000);
 		//send : 发送请求
 		//method :请求方式
 		//url : 请求路径

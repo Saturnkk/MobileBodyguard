@@ -35,7 +35,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.dell.myapplication.R;
-import com.github.lzyzsd.circleprogress.ArcProgress;
 import com.le.safe.bean.AntivirusInfo;
 import com.le.safe.db.dao.AntivirusDao;
 import com.le.safe.utils.MD5Uitl;
@@ -43,12 +42,12 @@ import com.le.safe.utils.MD5Uitl;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.example.dell.myapplication.R.styleable.ArcProgress;
+import circleprogress.ArcProgress;
 
 
 public class AntivirusActivity extends AppCompatActivity {
 
-	private ArcProgress mProgressBar;
+	public ArcProgress mProgressBar;
 	private PackageManager pm;
 	private TextView mPackageName;
 	private List<AntivirusInfo> list;

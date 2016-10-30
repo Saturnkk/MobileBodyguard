@@ -55,8 +55,6 @@ public class HomeActivity extends AppCompatActivity implements OnClickListener,
 		setContentView(R.layout.activity_home);// 加载布局
 
 
-
-		
 		//int i = 3/0;
 		
 		initView();
