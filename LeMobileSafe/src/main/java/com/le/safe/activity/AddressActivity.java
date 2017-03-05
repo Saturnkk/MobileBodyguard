@@ -16,7 +16,9 @@ import android.widget.Toast;
 import com.example.dell.myapplication.R;
 import com.le.safe.db.dao.AddressDao;
 
-
+/**
+ * 地址
+ */
 public class AddressActivity extends AppCompatActivity {
 	
 	private EditText mPhone;
