@@ -62,7 +62,7 @@
                 arc_suffix_text_size ： %号文本字体大小
                 arc_suffix_text_padding ： %号距离中间数字的距离
                 -->
-            <com.github.lzyzsd.circleprogress.ArcProgress
+            <circleprogress.ArcProgress
                 android:id="@+id/arc_antivirus_progress"
                 android:layout_width="120dp"
                 android:layout_height="120dp"

@@ -43,12 +43,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1" >
-
-        <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+        StickyListHeadersListView
+        <com.le.safe.ui.StickyListHeadersListView
             android:id="@+id/lv_processmanager_process"
             android:layout_width="match_parent"
             android:layout_height="match_parent" >
-        </se.emilsjolander.stickylistheaders.StickyListHeadersListView>
+        </com.le.safe.ui.StickyListHeadersListView>
         <!--
              handle : 抽屉的把手        控件的id
         	 content : 抽屉的内容    控件的id

@@ -8,16 +8,16 @@
         style="@style/activityTitleBar"
         android:text="软件管理" />
 
-    <cn.itcast.mobliesafexian05.ui.CustomProgressbar
+    <com.le.safe.ui.CustomProgressbar
         android:id="@+id/cp_appmanager_memory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        ></cn.itcast.mobliesafexian05.ui.CustomProgressbar>
-    <cn.itcast.mobliesafexian05.ui.CustomProgressbar
+        ></com.le.safe.ui.CustomProgressbar>
+    <com.le.safe.ui.CustomProgressbar
         android:id="@+id/cp_appmanager_sd"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        ></cn.itcast.mobliesafexian05.ui.CustomProgressbar>
+        ></com.le.safe.ui.CustomProgressbar>
     
     <!-- 控件在布局文件中越往下，显示的时候越在上方 -->
     <FrameLayout 

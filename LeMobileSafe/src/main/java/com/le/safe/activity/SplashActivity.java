@@ -72,7 +72,7 @@ public class SplashActivity extends BaseActivity {
 		if (!ServiceUtil.isServiceRunning(getApplicationContext(), "cn.itcast.mobliesafexian05.service.ProtectedService")) {
 			startService(new Intent(this,ProtectedService.class));
 		}
-		shortCut();
+//		shortCut();
 	}
 
 	/**
