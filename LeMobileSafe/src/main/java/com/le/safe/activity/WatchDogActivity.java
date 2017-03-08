@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 import com.example.dell.myapplication.R;
 
-public class WatchDogActivity extends AppCompatActivity {
+public class WatchDogActivity extends BaseActivity {
 
 	private ImageView mIcon;
 	private TextView mName;
@@ -25,9 +25,13 @@ public class WatchDogActivity extends AppCompatActivity {
 	private String packagename;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_watchdog);
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_watchdog,null);
+		return view;
+	}
+
+	@Override
+	protected void initData() {
 		initView();
 		fillData();
 	}

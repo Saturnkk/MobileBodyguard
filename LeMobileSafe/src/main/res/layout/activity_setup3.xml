@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
     android:orientation="vertical" >
 
     <TextView
@@ -13,7 +14,8 @@
         android:text="SIM卡如果发生变化:" />
     <!--
          layout_gravity : 设置控件在父控件中的位置
-	     gravity ： 设置控件中内容在控件中的位置    -->
+	     gravity ： 设置控件中内容在控件中的位置
+    -->
 
     <TextView
         android:layout_width="match_parent"

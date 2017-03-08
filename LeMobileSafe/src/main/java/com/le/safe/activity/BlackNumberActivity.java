@@ -27,7 +27,7 @@ import com.le.safe.db.dao.BlackNumberDao;
 import java.util.List;
 
 
-public class BlackNumberActivity extends AppCompatActivity {
+public class BlackNumberActivity extends BaseActivity {
 
 	protected static final int BLACKNUMBER_ADD_CODE = 100;
 	protected static final int BLACKNUMBER_UPDATE_CODE = 101;
@@ -42,13 +42,18 @@ public class BlackNumberActivity extends AppCompatActivity {
 	private final int MAXNUM=20;
 	//查询的起始位置
 	private int startIndex=0;
-	
+
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_blacknumber);
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_blacknumber,null);
+		return view;
+	}
+
+	@Override
+	protected void initData() {
 		initView();
 	}
+
 	/**
 	 * 初始化控件
 	 */

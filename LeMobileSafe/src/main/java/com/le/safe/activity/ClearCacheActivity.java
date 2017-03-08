@@ -37,7 +37,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class ClearCacheActivity extends AppCompatActivity {
+public class ClearCacheActivity extends BaseActivity {
 	
 	protected static final int REQUEST_INFO_CODE = 100;
 
@@ -59,11 +59,15 @@ public class ClearCacheActivity extends AppCompatActivity {
 	 * 缓存的总大小
 	 */
 	private long totalCacheSize = 0;
-	
+
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_clearcache);
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_clearcache,null);
+		return view;
+	}
+
+	@Override
+	protected void initData() {
 		initView();
 	}
 

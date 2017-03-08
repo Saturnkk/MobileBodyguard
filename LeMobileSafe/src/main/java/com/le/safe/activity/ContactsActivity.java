@@ -22,19 +22,24 @@ import com.le.safe.engine.ContactsEngine;
 import java.util.List;
 
 
-public class ContactsActivity extends AppCompatActivity implements OnItemClickListener{
+public class ContactsActivity extends BaseActivity implements OnItemClickListener{
 
 	private List<ContactsInfo> contacts;
 	private ListView mContacts;
 	private ProgressBar mLoading;
+
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_contacts);
-		//初始化控件  -> 加载数据
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_contacts,null);
+		return view;
+	}
+
+	@Override
+	protected void initData() {
 		initView();
 		fillData();
 	}
+
 	/**
 	 * 加载数据
 	 */

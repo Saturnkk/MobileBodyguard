@@ -10,7 +10,9 @@ import android.widget.TextView;
 
 import com.example.dell.myapplication.R;
 
-
+/**
+ * 设置按钮
+ */
 public class SettingView extends RelativeLayout {
 
 	private TextView mSettingViewTitle;

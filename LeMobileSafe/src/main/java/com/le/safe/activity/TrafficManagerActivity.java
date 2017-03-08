@@ -19,22 +19,28 @@ import com.le.safe.engine.AppEngine;
 import java.util.List;
 
 
-public class TrafficManagerActivity extends AppCompatActivity {
+public class TrafficManagerActivity extends BaseActivity {
 
 	private ListView mApplication;
 	private List<AppInfo> list;
+
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_traffic);
-		
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_traffic,null);
+		return view;
+	}
+
+	@Override
+	protected void initData() {
+
 		/*TrafficStats.getUidRxBytes(uid);//获取应用程序下载流量，uid：应用程序的标示,返回的结果就是以b为单位的流量
 		TrafficStats.getUidTxBytes(uid);//获取应用程序上传流量
 		//TrafficStasts:获取的手机中proc中存储流量的目录来进行，proc目录手机重启，数据清空
-		 */	
+		 */
 		initView();
 		fillData();
 	}
+
 	/**
 	 * 初始化控件
 	 */

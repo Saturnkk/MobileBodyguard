@@ -23,13 +23,8 @@ public abstract class BaseActivity extends AppCompatActivity {
         //初始化布局
         setContentView(initContentView());
         //设置沉浸式状态栏
-        StatusBarCompat.compat(this);
+        StatusBarCompat.compat(this,Color.parseColor("#429ED6"));
         initData();
-    }
-
-    @Override
-    protected void onResume() {
-        super.onResume();
     }
 
     /**

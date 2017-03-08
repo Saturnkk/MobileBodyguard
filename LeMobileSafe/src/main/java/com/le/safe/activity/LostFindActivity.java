@@ -14,18 +14,25 @@ import com.le.safe.utils.Contants;
 import com.le.safe.utils.SharedPreferencesUtil;
 
 
-public class LostFindActivity extends AppCompatActivity implements OnClickListener{
+public class LostFindActivity extends BaseActivity implements OnClickListener{
 
 	private TextView mSetUp;
 	private ImageView mProtected;
 	private TextView mSafeNumber;
 	private RelativeLayout mRelProtected;
+
+
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_lostfind);
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_lostfind,null);
+		return view;
+	}
+
+	@Override
+	protected void initData() {
 		initView();
 	}
+
 	/**
 	 * 初始化控件
 	 */

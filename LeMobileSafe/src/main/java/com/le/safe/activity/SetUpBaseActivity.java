@@ -1,5 +1,6 @@
 package com.le.safe.activity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.GestureDetector;
@@ -7,9 +8,11 @@ import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.Window;
 import android.widget.Toast;
 
 import com.example.dell.myapplication.R;
+import com.le.safe.utils.StatusBarCompat;
 
 public abstract class SetUpBaseActivity extends AppCompatActivity {
 	
@@ -24,6 +27,10 @@ public abstract class SetUpBaseActivity extends AppCompatActivity {
 		gestureDetector = new GestureDetector(this, new MyOnGestureListener());
 		super.onCreate(savedInstanceState);
 
+		getWindow().requestFeature(Window.FEATURE_NO_TITLE);//隐藏标题
+
+		//设置沉浸式状态栏
+		StatusBarCompat.compat(this, Color.parseColor("#429ED6"));
 	}
 	//界面的触摸事件
 	//MotionEvent : 界面触摸事件
