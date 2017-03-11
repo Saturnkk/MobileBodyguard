@@ -45,7 +45,7 @@ import java.util.List;
 import circleprogress.ArcProgress;
 
 
-public class AntivirusActivity extends AppCompatActivity {
+public class AntivirusActivity extends BaseActivity {
 
 	public ArcProgress mProgressBar;
 	private PackageManager pm;
@@ -98,9 +98,13 @@ public class AntivirusActivity extends AppCompatActivity {
 	}
 	
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_antivirus);
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_antivirus,null);
+		return view;
+	}
+
+	@Override
+	protected void initData() {
 		initView();
 		//注册卸载的广播接受者
 		uninstallReceiver = new UninstallReceiver();
@@ -111,6 +115,7 @@ public class AntivirusActivity extends AppCompatActivity {
 		intentFilter.addDataScheme("package");
 		registerReceiver(uninstallReceiver, intentFilter);
 	}
+
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();

@@ -19,17 +19,23 @@ import com.le.safe.db.dao.AddressDao;
 /**
  * 地址
  */
-public class AddressActivity extends AppCompatActivity {
+public class AddressActivity extends BaseActivity {
 	
 	private EditText mPhone;
 	private TextView mLocation;
+
+
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_address);
-		
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_address,null);
+		return view;
+	}
+
+	@Override
+	protected void initData() {
 		initView();
 	}
+
 	/**
 	 * 初始化控件
 	 */

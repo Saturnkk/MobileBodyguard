@@ -24,8 +24,10 @@ import java.io.FileReader;
 import java.util.List;
 
 
-
-public class CommonToolsActivity extends AppCompatActivity implements OnClickListener {
+/**
+ * 常用工具
+ */
+public class CommonToolsActivity extends BaseActivity implements OnClickListener {
 
 	private SettingView mAddress;
 	private SettingView mCommonnumber;
@@ -36,10 +38,13 @@ public class CommonToolsActivity extends AppCompatActivity implements OnClickLis
 	private SettingView mWatchDog2;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_commontools);
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_commontools,null);
+		return view;
+	}
 
+	@Override
+	protected void initData() {
 		initView();
 	}
 

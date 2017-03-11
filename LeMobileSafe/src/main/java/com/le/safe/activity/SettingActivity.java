@@ -23,7 +23,7 @@ import com.le.safe.utils.SharedPreferencesUtil;
 
 
 
-public class SettingActivity extends AppCompatActivity {
+public class SettingActivity extends BaseActivity {
 
 	private SettingView mUpdate;
 	private SettingView mBlackNumber;
@@ -31,9 +31,13 @@ public class SettingActivity extends AppCompatActivity {
 	private SettingView mChangebg;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_setting);
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_setting,null);
+		return view;
+	}
+
+	@Override
+	protected void initData() {
 		initView();
 	}
 

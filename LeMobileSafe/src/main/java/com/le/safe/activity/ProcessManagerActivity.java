@@ -39,7 +39,7 @@ import java.util.List;
 
 
 
-public class ProcessManagerActivity extends AppCompatActivity {
+public class ProcessManagerActivity extends BaseActivity {
 
 	private CustomProgressbar mProcessCount;
 	private CustomProgressbar mMemory;
@@ -61,10 +61,15 @@ public class ProcessManagerActivity extends AppCompatActivity {
 	 */
 	private boolean isshowsystem = true;
 
+
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_processmanager);
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_processmanager,null);
+		return view;
+	}
+
+	@Override
+	protected void initData() {
 		initView();
 		setHeaderMessage();
 		fillData();

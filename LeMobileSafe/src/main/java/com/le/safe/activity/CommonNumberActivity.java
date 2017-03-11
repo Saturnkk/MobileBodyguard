@@ -21,16 +21,20 @@ import java.util.List;
 
 
 
-public class CommonNumberActivity extends AppCompatActivity {
+public class CommonNumberActivity extends BaseActivity {
 
 	private ExpandableListView mExpandListView;
 	private List<CommonNumberDao.Group> groups;
 	private int currentGroup =-1;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_commonnumber);
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_commonnumber,null);
+		return view;
+	}
+
+	@Override
+	protected void initData() {
 		initView();
 	}
 

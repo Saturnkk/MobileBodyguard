@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class AppLockActivity extends AppCompatActivity implements OnClickListener {
+public class AppLockActivity extends BaseActivity implements OnClickListener {
 	private Button mUnlock;
 	private Button mLock;
 	private LinearLayout mllUnlock;
@@ -44,9 +44,13 @@ public class AppLockActivity extends AppCompatActivity implements OnClickListene
 	private Myadapter lockmyadapter;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_applock);
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_applock,null);
+		return view;
+	}
+
+	@Override
+	protected void initData() {
 		initView();
 		fillData();
 	}

@@ -34,7 +34,7 @@ import java.util.List;
 
 
 
-public class AppManagerActivity extends AppCompatActivity implements OnClickListener {
+public class AppManagerActivity extends BaseActivity implements OnClickListener {
 
 	private static final int UNINSTALL_CODE = 10;
 	private CustomProgressbar mMemory;
@@ -48,9 +48,13 @@ public class AppManagerActivity extends AppCompatActivity implements OnClickList
 	private AppInfo appInfo;
 
 	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_appmanager);
+	protected View createXMLView() {
+		View view = View.inflate(this,R.layout.activity_appmanager,null);
+		return view;
+	}
+
+	@Override
+	protected void initData() {
 		initView();
 		setMemory();
 		fillData();

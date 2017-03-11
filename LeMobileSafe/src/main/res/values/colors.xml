@@ -6,4 +6,8 @@
     <!-- 将颜色抽取到colors.xml文件 -->
     <color name="lostfind_protected_selector_press">#9cffce</color>
     <color name="lostfind_protected_selector_normal">#ffffff</color>
+    <color name="setting_press">#b6da53</color>
+    <color name="home_press">#e1ebf2</color>
+
+
 </resources>
